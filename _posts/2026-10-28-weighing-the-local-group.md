@@ -1,6 +1,6 @@
 ---
 title: Understanding Local Group and Its Mass distribution measurement
-date: 2026-10-28 01:00:00 +0600
+date: 2026-10-27 12:00:00 +0600
 categories:
   - Astrophysics
   - Near-Field Cosmology
