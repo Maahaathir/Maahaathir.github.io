@@ -43,7 +43,7 @@ social:
     #- https://twitter.com/username # change to your Twitter homepage
     - https://github.com/Maahaathir # change to your GitHub homepage
     # Uncomment below to add more social links
-    - https://www.facebook.com/mahathiirr
+    - https://www.facebook.com/profile.php?id=61560094359365
     - https://www.linkedin.com/in/sarker-mahathir-mohammad-4bb102297
 
 # Site Verification Settings
@@ -100,7 +100,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: /assests/img/avatar.png
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
