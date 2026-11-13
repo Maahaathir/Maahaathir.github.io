@@ -10,7 +10,7 @@ tags:
   - dark-matter
 math: true
 pin: false
-"media_subpath:": /assets/img/posts/local-group/
+media_subpath: /assets/img/posts/local-group/
 ---
 
 Ever wondered what is near our very own galaxy? People often think about what lies beyond the lenses of our telescopes, but what we have in our own backyard is just as interesting as the rest of the universe. It gives me immense pleasure to start writing about this stuff—and starting with this topic is equally exciting.
