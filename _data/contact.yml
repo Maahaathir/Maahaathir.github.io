@@ -3,6 +3,11 @@
 - type: github
   icon: "fab fa-github"
 
+- type: facebook
+  icon: "fab fa-facebook"
+  url: "https://www.facebook.com/profile.php?id=61560094359365"
+
+
 - type: rss
   icon: "fas fa-rss"
   noblank: true
