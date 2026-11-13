@@ -14,7 +14,7 @@ pin: false
 
 Ever wondered what is near our very own galaxy? People often think about what lies beyond the lenses of our telescopes, but what we have in our own backyard is just as interesting as the rest of the universe. It gives me immense pleasure to start writing about this stuff—and starting with this topic is equally exciting.
 
-![Map of the Local Group of galaxies](assets/img/posts/local-group/Local_Group.svg.webp)
+![Map of the Local Group of galaxies](assets/img/posts/local-group/4.png)
 
 If we consider our Milky Way as a continent, then there are a few more "continents", other galaxies - in our vicinity. This is a fascinating region to expand our knowledge because we can get a much closer view of it with our instruments than anywhere else in the cosmos. Yet even here, the uncertainties in many measurements are surprisingly large. Okay, I am diverting from the main topic..sorry, let's come back.
 
