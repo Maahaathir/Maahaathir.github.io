@@ -11,7 +11,7 @@ tags:
 math: true
 pin: false
 image:
-  path: /assets/img/posts/local-group/4.png
+  path: /assets/img/posts/local-group/41.png
   alt: Map of the Local Group of galaxies
 ---
 
