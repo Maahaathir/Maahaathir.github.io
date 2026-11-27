@@ -1,0 +1,42 @@
+name: Send New Post to Buttondown
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '_posts/**'
+
+jobs:
+  notify-subscribers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Wait for GitHub Pages deploy
+        run: sleep 90
+
+      - name: Send newly added post via Buttondown API
+        env:
+          BUTTONDOWN_API_KEY: ${{ secrets.BUTTONDOWN_API_KEY }}
+        run: |
+          NEW_POST=$(git diff --name-only --diff-filter=A HEAD~1 HEAD -- '_posts/*.md' | head -n 1)
+          if [ -z "$NEW_POST" ]; then
+            echo "No newly added post found."
+            exit 0
+          fi
+
+          TITLE=$(grep -m 1 '^title:' "$NEW_POST" | sed 's/^title:[[:space:]]*//; s/^["'\'']//; s/["'\'']$//')
+          FILENAME=$(basename "$NEW_POST" .md)
+          SLUG=$(echo "$FILENAME" | sed 's/^[0-9]\{4\}-[0-9]\{2\}-[0-9]\{2\}-//')
+          POST_URL="https://maahaathir.github.io/posts/${SLUG}/"
+
+          BODY="New post published on PhyShots:\n\n**${TITLE}**\n\nRead the full explainer here: ${POST_URL}"
+
+          curl --fail-with-body -X POST "https://api.buttondown.com/v1/emails" \
+            -H "Authorization: Token $BUTTONDOWN_API_KEY" \
+            -H "Content-Type: application/json" \
+            -d "$(jq -n --arg subj "$TITLE" --arg body "$BODY" '{subject: $subj, body: $body, status: "about_to_send"}')"
