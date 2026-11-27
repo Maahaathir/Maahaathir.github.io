@@ -7,6 +7,9 @@
   icon: "fab fa-facebook"
   url: "https://www.facebook.com/profile.php?id=61560094359365"
 
+- type: coffee
+  icon: "fas fa-mug-hot"
+  url: "https://coffee.towfiqislam.com/mahathir"
 
 - type: rss
   icon: "fas fa-rss"
