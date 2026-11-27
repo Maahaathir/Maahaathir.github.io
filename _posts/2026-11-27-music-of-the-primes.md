@@ -9,7 +9,7 @@ tags:
   - primes
 math: true
 image:
-  path: /assets/img/posts/rh-hypo/bernhard_riemann.png
+  path: /assets/img/posts/rh-hypo/bernhard_riemann.webp
   alt: Bernhard Riemann
 ---
 
