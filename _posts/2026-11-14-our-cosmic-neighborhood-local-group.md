@@ -6,7 +6,6 @@ categories:
   - Cosmology
 tags:
   - local-group
-  - mathjax
   - dark-matter
 math: true
 pin: false
